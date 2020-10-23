@@ -229,6 +229,10 @@ max-width: 250px;
 height: 70px;
 
 }
+.footer-box input
+{
+    margin-left: 12%;
+}
 
 .footer-box input[type="text"]{  
     padding-top: 0; 

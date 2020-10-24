@@ -577,7 +577,7 @@ padding-bottom: 30px;
 
 .make-sticky
 {
-    float: right;  position:-webkit-sticky; z-index: 15; margin-top: -25vh;
+    float: right;  position:fixed;  margin-top: -25vh;
 }
 
 .syllabus

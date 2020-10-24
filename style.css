@@ -2,7 +2,15 @@
 {
     margin: 0;
     padding: 0;
-    zoom: 100% !important;
+    
+    
+}
+
+
+.mainbody
+{
+    max-width: 1280px;
+    
 }
 
 body
@@ -20,13 +28,21 @@ body
 
 .navbar
 {
-    background-image: linear-gradient(to right, #3e2974,#ed207c);
+    background-image: white !important;
     padding: 0 !important;
+    background-color:white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
 }
+
+
 .navbar-brand{
     font-weight: 1000;
-    
+    background: -webkit-linear-gradient(to right, #3e2974,#ed207c);
+     //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     
 
@@ -34,8 +50,9 @@ body
 
 .navbar-brand img
 {
-    height: 50px;
+    height: 3rem;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navbar-nav li
@@ -45,8 +62,9 @@ body
 
 .navbar-nav li a
 {
-    color: white  !important;
+    color:#3e2974 !important;
     font-weight: 600 ;
+    font-size: 1rem;
     float: right;
     text-align: left;
 }
@@ -55,6 +73,7 @@ body
 {
     color: black !important;
     font-size: 30px !important ;
+    border: none;
 }
 
 .navbar-toggler
@@ -67,14 +86,15 @@ body
 
 #banner
 {
-    background-image: linear-gradient(to right, #3e2974,#ed207c);
+   // background-image: linear-gradient(to right, #3e2974,#ed207c);
     color: #fff;
     padding-top: 5%;
+    padding-bottom: 50px;
 }
 
 .promo-title
 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-top: 80px;
     
@@ -100,6 +120,7 @@ body
 
 #services{
     padding: 50px 0;
+    background-color: white;
 }
 
 .service-img{
@@ -115,6 +136,8 @@ body
 .service-card{
 
 height: 100%;
+background-color: white;
+border-radius: 10px;
 }
 
 .services h4{
@@ -162,12 +185,12 @@ color:#3e2974  !important;
 /*-----SOCIAL MEDIA-------*/
 
 #social-media{
-    background:#f0f0f0;
+ background:#f0f0f0;
     padding: 40px 0;
 }
 #social-media p
 {
-font-size: 30px;
+font-size: 2rem;
 font-weight: 600;
 margin-bottom: 30px;
 }
@@ -187,10 +210,28 @@ margin-bottom: 30px;
 
 #footer
 {
-    background-image: linear-gradient(to right, #3e2974,#ed207c);
+   //background-image: linear-gradient(to right, #3e2974,#ed207c);
+  background: url(bg.jpg);
     padding: 0 !important;
     
+    
+} 
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .footbox
+{
+    text-align: center;
 }
+
+
+ }
+
+
+
 
 
 /*.footer-img
@@ -229,10 +270,7 @@ max-width: 250px;
 height: 70px;
 
 }
-.footer-box input
-{
-    margin-left: 12%;
-}
+
 
 .footer-box input[type="text"]{  
     padding-top: 0; 

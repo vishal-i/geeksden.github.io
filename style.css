@@ -7,6 +7,10 @@
     
 }
 
+h2,h3,h4,h5
+{
+    color: #3e2974 ;
+}
 
 .mainbody
 {
@@ -41,7 +45,7 @@ body
 .navbar-brand{
     font-weight: 1000;
     color: #3e2974 !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
     
 
@@ -102,7 +106,7 @@ body
 
 #banner
 {
-   // background-image: linear-gradient(to right, #3e2974,#ed207c);
+  
     color: #fff;
     padding-top: 5%;
     padding-bottom: 80px;
@@ -156,9 +160,9 @@ background-color: white;
 border-radius: 10px;
 }
 
-.services h4{
+.services h5{
     padding: 5px;
-    margin-top: 25px; 
+    margin-top: 20px; 
     text-transform: uppercase;
 }
 
@@ -171,7 +175,7 @@ width: 200px;
 margin-left: auto;
 margin-right: auto;
 display: block;
-transform: translateY(63px);
+transform: translateY(54px);
 color:#3e2974  !important;
 }
 
@@ -198,10 +202,13 @@ color:#3e2974  !important;
     background-image: linear-gradient(to right, #3e2974,#ed207c);
 }
 
+
+
+
 /*-----SOCIAL MEDIA-------*/
 
 #social-media{
- background:#f0f0f0;
+ background:whitesmoke;
     padding: 40px 0;
 }
 #social-media p
@@ -227,7 +234,7 @@ margin-bottom: 30px;
 #footer
 {
    background-image: linear-gradient(to right, #3e2974,#ed207c);
-  //background: url(bg.jpg);
+  
     padding: 0 !important;
     
     
@@ -254,7 +261,7 @@ margin-bottom: 30px;
 }
 .footer-box img
 {
-    width: 120px;
+    width: 80px;
     margin-bottom: 20px;
 }
 .footer-box p a
@@ -290,8 +297,8 @@ height: 70px;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
-    background-color:#3e2974 ;
-    border-color: #3e2974;
+    background-color:#3e2974 !important;
+    border-color: #3e2974 !important;
     
     color:white;
     
@@ -306,7 +313,7 @@ height: 70px;
     margin-bottom: 0;
     padding-bottom: 20px;
     text-align: center !important;
-    color:#3e2974;
+    color:whitesmoke;
 }
 
 
@@ -331,14 +338,30 @@ height: 70px;
 
   }
 
+.card img
+{
+    width:100%;
+   
+}
+
+
+.card{
+height: 100% !important;
+
+
+}
+
+.card-col
+{
+    margin-bottom: 10px;
+}
 
 .course-title
 {
     overflow: hidden;
-    height: 60px;
+    height: 50px;
     text-align: left !important;
     border-bottom: 2px solid #3e2974;
-    
     width: 100%;
 
 }
@@ -347,22 +370,11 @@ height: 70px;
     padding: 2px 4px 2px 4px;
 
 }
-.textbtns
-{
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-}
-.textbtns .btn
-{
-    width: 80%;
-    border-radius: 20px;
-}
-
 
 .card-text
 {
   padding-top: 10px;
-  height: 150x;
+  height: 120px;
   text-align: left !important;
 
 }
@@ -371,23 +383,32 @@ height: 70px;
     padding-bottom: 5px !important;
     padding-right: 5px !important;
     padding-left: 5px !important;
+    
 }
 
-.card-body .btn-primary
+
+
+.c-card .btn-primary
 {
-    background-color: #3e2974;
-    border-color: #3e2974;
+    
+    border-color: #3e2974 !important;
+    border-radius: 20px;
+    margin-right:10px ;
+  
+    box-shadow: none;
+    background-color: #3e2974 !important;
+
     
     
 }
-.card-body .btn-success
+.c-card .btn-success
 {
-    background-color: #ed207c;
-    border-color: #ed207c;
+    background-color: #ed207c !important;
+    border-color: #ed207c !important;
+    border-radius: 20px;
+
+    box-shadow: none;
 }
-
-
-
 
 /*-------contact page------*/
 
@@ -423,7 +444,7 @@ height: 70px;
 #feedform
 {
     padding: 50px 0;
-    background-color: rgb(245, 245, 245);
+    background-color: whitesmoke;
     
 }
 .con{
@@ -484,7 +505,7 @@ padding-bottom: 30px;
 
 .faqs
 {
-    background: rgb(243, 243, 243);
+    background: whitesmoke;
     padding: 20px 20px 20px 20px;
 }
 .faqs h4
@@ -495,6 +516,7 @@ padding-bottom: 30px;
     border-radius: 10px  ;   
     padding:10px 20px 10px 20px ;
     margin-top: 20px;
+    font-family: sans-serif;
  
 }
 
@@ -506,3 +528,103 @@ padding-bottom: 30px;
     padding:10px 20px 10px 20px ;
     border-radius: 10px  ;   
 }
+
+/*------syllabus Banner Section-------*/
+
+#sbanner
+{
+  
+    color: #fff;
+    background-image: linear-gradient(to right, #3e2974,#ed207c) ;
+    padding-bottom: 50px;
+}
+
+.promo-title
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+
+    
+}
+
+.sbanner a{
+    background-color:#ed207c ;
+    border-color:#ed207c ;
+}
+
+.img-fluid
+{
+    height: 200px !important;
+}
+
+/*------Syllabus-------*/
+
+#syllabus
+{
+    padding: 20px;
+    padding-bottom: 5%;
+    background:white;
+}
+
+.make-sticky
+{
+    float: right;  position:-webkit-sticky; z-index: 15; margin-top: -25vh;
+}
+
+.syllabus
+{
+    display: block;  /*taking from inline not from here*/
+}
+
+
+
+/*syllabus card float*/
+
+
+
+
+.sy-card-col
+{
+    margin-bottom: 10px;
+}
+
+.sy-card-title
+{
+    overflow: hidden;
+   
+    width: 100%;
+
+}
+.sy-card-title h2,h4{
+    
+    padding: 2px 4px 2px 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.sy-card-text
+{
+  padding-top: 10px;
+  
+
+
+}
+
+.sy-card-text .btn-primary
+{
+    background-color: #3e2974 !important;
+    border-color: #3e2974 !important;
+    
+}
+
+.sy-card-body
+{
+    padding-bottom: 5px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    
+}
+
+
+

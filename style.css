@@ -4,6 +4,7 @@
     padding: 0;
     
     
+    
 }
 
 
@@ -28,7 +29,7 @@ body
 
 .navbar
 {
-    background-image: white !important;
+    
     padding: 0 !important;
     background-color:white;
     border-bottom-left-radius: 20px;
@@ -39,9 +40,7 @@ body
 
 .navbar-brand{
     font-weight: 1000;
-    background: -webkit-linear-gradient(to right, #3e2974,#ed207c);
-     //-webkit-background-clip: text;
-    //-webkit-text-fill-color: transparent;
+    color: #3e2974 !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     
@@ -58,22 +57,39 @@ body
 .navbar-nav li
 {
     padding: 0 10px;
+    padding-right: 20px;
+    
+    
 }
+
+.navbar-nav li a:hover {
+    color: #ed207c !important;
+  }
+  
+  .navbar-nav li a.active {
+    color: #ed207c !important;
+    
+  }
+
+
 
 .navbar-nav li a
 {
     color:#3e2974 !important;
     font-weight: 600 ;
-    font-size: 1rem;
+    font-size: 1.1rem;
     float: right;
     text-align: left;
+}
+.navbar button{
+    border: none;
 }
 
 .fa-bars
 {
     color: black !important;
     font-size: 30px !important ;
-    border: none;
+    border: none !important;
 }
 
 .navbar-toggler
@@ -89,7 +105,7 @@ body
    // background-image: linear-gradient(to right, #3e2974,#ed207c);
     color: #fff;
     padding-top: 5%;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .promo-title
@@ -107,13 +123,13 @@ body
 
 .img-fluid
 {
-    height: 300px !important;
+    height: 250px !important;
 }
 
 .bottom-img
 {
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 /*---Service Secction----*/
@@ -210,8 +226,8 @@ margin-bottom: 30px;
 
 #footer
 {
-   //background-image: linear-gradient(to right, #3e2974,#ed207c);
-  background: url(bg.jpg);
+   background-image: linear-gradient(to right, #3e2974,#ed207c);
+  //background: url(bg.jpg);
     padding: 0 !important;
     
     
@@ -230,16 +246,6 @@ margin-bottom: 30px;
 
  }
 
-
-
-
-
-/*.footer-img
-{
-    width: 100%;
-    height: 100px;
-    
-}*/
 
 .footer-box
 {
@@ -278,15 +284,15 @@ height: 70px;
     
 } 
 
-.footer-box .btn-primary
+.footer-box button
 {
-    box-shadow: 0 1px #888ef5;
+
     border: none;
     border-radius: 20px;
     margin-top: 10px;
     background-color:#3e2974 ;
     border-color: #3e2974;
-    transform: translateY(5px);
+    
     color:white;
     
 
@@ -310,7 +316,7 @@ height: 70px;
 {
    padding: 20px;
    padding-bottom: 5%;
-   background:#f0f0f0;
+   background:white;
 
 }
 
@@ -319,7 +325,7 @@ height: 70px;
     {
        padding: 50px;
        padding-bottom: 5%;
-       background:#f0f0f0;
+       background:white;
     
     }
 
@@ -473,6 +479,7 @@ padding-bottom: 30px;
 #faqs
 {
     padding-bottom: 60px;
+    padding-top: 50px;
 }
 
 .faqs

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="dovalidation.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,22 +59,22 @@
           <div class="concard shadow p-3 mb-5">
            <img src="images/call.png" alt="" class="contact-img">
            <h4>Phone/Whatsapp</h4>
-           <p><a href=" tel: +91 9763728471 "></a> +91 9763728471 </p>
-           <p><a href=" tel: +91 7666133538 "></a> +91 7666133538 </p>
+           <p>+91 9763728471 </p>
+           <p>+91 7666133538 </p>
          </div>
         </div>
          <div class="col-md-4 contact" >
           <div class="concard shadow p-3 mb-5">
           <img src="images/email.png" alt="" class="contact-img">
           <h4>Email</h4>
-           <a href="mailto:info.geeksden@gmail.com">info.geeksden@gmail.com</a>
+           <a href="mailto:geeksden@gmail.com">geeksden@gmail.com</a>
         </div>
       </div>
         <div class="col-md-4 contact">
           <div class="concard shadow p-3 mb-5">
           <img src="images/share.png" alt="" class="contact-img">
           <h4>Social</h4>
-        <p>Insta:<a href="https://www.instagram.com/geeksden.in"> @geeksden.in</a> </p> 
+         <a href="https://www.instagram.com/geeksden.in">Insta: @geeksden.in</a>
         </div>
       </div>
        </div>  
@@ -89,12 +91,12 @@
       </div>
         <form class="formdiv">
           <div class="form-group ">
-            <input required name="name" type="text" class="form-control" placeholder="Your Name">
-            <input required name="email" type="email" class="form-control" placeholder="Your Email">
-            <input required name="phone" type="text" class="form-control" placeholder="Phone Number">
-            <input required name="subject" type="text" class="form-control" placeholder="Subject">
-            <textarea  name="message" class="form-control" placeholder="Message"  rows="3"></textarea>
-            <button type="submit" class="btn btn-primary" >Submit</button>
+            <input required name="name" type="text" class="form-control" placeholder="Your Name" id="nam">
+            <input required name="email" type="email" class="form-control" placeholder="Your Email" id="mail">
+            <input required name="phone" type="text" class="form-control" placeholder="Phone Number" id="mob">
+            <input required name="subject" type="text" class="form-control" placeholder="Subject" id="sub">
+            <textarea  name="message" class="form-control" placeholder="Message"  rows="3" id="msg"></textarea>
+            <button type="button" class="btn btn-primary" onclick="doValidation()">Submit</button>
           </div>
         </form>
         
@@ -107,10 +109,10 @@
       <div class="container text-center">
       <p>FIND US ON</p>
       <div class="social-icons"> 
-        <a href="https://www.instagram.com/geeksden.in"><img src="images/insta_icon.png" alt=""></a>
-        <a href="whatsapp://send?text=Hello World!&phone=+919763728471"><img src="images/whatsapp_icon.png" alt=""></a>
+        <a href="#"><img src="images/insta_icon.png" alt=""></a>
+        <a href="#"><img src="images/whatsapp_icon.png" alt=""></a>
         <a href="#"><img src="images/fb_icon.png" alt=""></a>
-        <a href="mailto:info.geeksden@gmail.com"><img src="images/gmail_icon.png" alt=""></a>
+        <a href="#"><img src="images/gmail_icon.png" alt=""></a>
         <a href="#"><img src="images/linkedin_icon.png" alt=""></a>
       </div>
  
@@ -120,6 +122,7 @@
  
  <!---------footer section-------->
  
+
  <section id="footer">
   <!--<img src="footbot.png" alt="bot" class="footer-img">-->
 
@@ -143,12 +146,12 @@
       <div class="col-md-4 footer-box" >
         <div>
           <h4 style="color:whitesmoke ;"><b>Want us to reach you?</b></h4>
-          <input type="email" class="form-control " placeholder="Your Email" style="display: inline-block;" >
-          <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="display: inline-block;">
+          <input type="email" class="form-control " placeholder="Your Email" style="display: inline-block;" id="semail" >
+          <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="display: inline-block;" id="sphone">
         </div>
       
         <!--input type="text"  class="form-control msg "  placeholder="Message"-->
-        <button type="button " class="btn btn-primary"><b>SEND</b></button>
+        <button type="button " class="btn btn-primary " onclick="doFooterValidation()"><b>SEND</b></button>
        </div>
 
     </div>
@@ -156,6 +159,7 @@
     <p class="copyright">Website Designed in Geek's Den</p>
   </div>
 </section>
+
 
 </body>
 </html>

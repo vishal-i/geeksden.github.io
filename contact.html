@@ -2,6 +2,30 @@
 <html lang="en">
 <script src="dovalidation.js"></script>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBtvUuk3jmOw_WS1vooGYJ4w2ooR_Pi-nk",
+    authDomain: "geeksdenweb.firebaseapp.com",
+    databaseURL: "https://geeksdenweb.firebaseio.com",
+    projectId: "geeksdenweb",
+    storageBucket: "geeksdenweb.appspot.com",
+    messagingSenderId: "761070209879",
+    appId: "1:761070209879:web:e9c826f2775081102d8c12"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,36 +76,36 @@
 
    <!----------contact Section----------->
    <section id="contact">
-     <div class="container text-center con">
-       <h2 class="title ctitle">Contact Us</h2>
-       <div class="row text-center">
-         <div class="col-md-4 contact" >
-          <div class="concard shadow p-3 mb-5">
-           <img src="images/call.png" alt="" class="contact-img">
-           <h4>Phone/Whatsapp</h4>
-           <p><a href=" tel: +91 9763728471 "> +91 9763728471 </a> </p>
-           <p><a href=" tel: +91 7666133538 "> +91 7666133538 </a> </p>
-         </div>
+    <div class="container text-center con">
+      <h2 class="title ctitle">Contact Us</h2>
+      <div class="row text-center">
+        <div class="col-md-4 contact" >
+         <div class="concard shadow p-3 mb-5">
+          <img src="images/call.png" alt="" class="contact-img">
+          <h4>Phone/Whatsapp</h4>
+          <p><a href=" tel: +91 9763728471 "> +91 9763728471 </a> </p>
+          <p><a href=" tel: +91 7666133538 "> +91 7666133538 </a> </p>
         </div>
-         <div class="col-md-4 contact" >
-          <div class="concard shadow p-3 mb-5">
-          <img src="images/email.png" alt="" class="contact-img">
-          <h4>Email</h4>
-           <a href="mailto:geeksden@gmail.com">info.geeksden@gmail.com</a>
-        </div>
-      </div>
-        <div class="col-md-4 contact">
-          <div class="concard shadow p-3 mb-5">
-          <img src="images/share.png" alt="" class="contact-img">
-          <h4>Social</h4>
-          Instagram: <a href="https://www.instagram.com/geeksden.in">@geeksden.in</a> <br>
-          Facebook : <a href="https://www.facebook.com/geeksden.in"> @geeksden.in</a>
-        </div>
-      </div>
-       </div>  
-      
+       </div>
+        <div class="col-md-4 contact" >
+         <div class="concard shadow p-3 mb-5">
+         <img src="images/email.png" alt="" class="contact-img">
+         <h4>Email</h4>
+          <a href="mailto:geeksden@gmail.com">info.geeksden@gmail.com</a>
+       </div>
      </div>
-   </section>
+       <div class="col-md-4 contact">
+         <div class="concard shadow p-3 mb-5">
+         <img src="images/share.png" alt="" class="contact-img">
+         <h4>Social</h4>
+         Instagram: <a href="https://www.instagram.com/geeksden.in">@geeksden.in</a> <br>
+         Facebook : <a href="https://www.facebook.com/geeksden.in"> @geeksden.in</a>
+       </div>
+     </div>
+      </div>  
+     
+    </div>
+  </section>
 
    <!---------feedback form----------->>
     <section id="feedform">
@@ -98,6 +122,9 @@
             <input required name="subject" type="text" class="form-control" placeholder="Subject" id="sub">
             <textarea  name="message" class="form-control" placeholder="Message"  rows="3" id="msg"></textarea>
             <button type="button" class="btn btn-primary" onclick="doValidation()">Submit</button>
+            <div>
+              <p style="padding-top: 10px;"  id="formalert"></p>
+            </div>
           </div>
         </form>
         
@@ -148,11 +175,14 @@
         <div>
           <h4 style="color:whitesmoke ;"><b>Want us to reach you?</b></h4>
           <input type="email" class="form-control " placeholder="Your Email" style="display: inline-block;" id="semail" >
-          <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="display: inline-block;" id="sphone">
+          <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="display: inline-block;" id="smob">
         </div>
       
         <!--input type="text"  class="form-control msg "  placeholder="Message"-->
         <button type="button " class="btn btn-primary " onclick="doFooterValidation()"><b>SEND</b></button>
+        <div>
+           <p id="falert" style="padding-top: 10px;"> </p>
+        </div>
        </div>
 
     </div>
@@ -161,6 +191,6 @@
   </div>
 </section>
 
-
+ 
 </body>
 </html>

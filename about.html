@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="dovalidation.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBtvUuk3jmOw_WS1vooGYJ4w2ooR_Pi-nk",
+      authDomain: "geeksdenweb.firebaseapp.com",
+      databaseURL: "https://geeksdenweb.firebaseio.com",
+      projectId: "geeksdenweb",
+      storageBucket: "geeksdenweb.appspot.com",
+      messagingSenderId: "761070209879",
+      appId: "1:761070209879:web:e9c826f2775081102d8c12"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,6 +121,7 @@
 
 <!---------footer section-------->
 
+
 <section id="footer">
   <!--<img src="footbot.png" alt="bot" class="footer-img">-->
 
@@ -121,12 +145,15 @@
       <div class="col-md-4 footer-box" >
         <div>
           <h4 style="color:whitesmoke ;"><b>Want us to reach you?</b></h4>
-          <input type="email" class="form-control " placeholder="Your Email" style="display: inline-block;" >
-          <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="display: inline-block;">
+          <input type="email" class="form-control " placeholder="Your Email" style="display: inline-block;" id="semail" >
+          <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="display: inline-block;" id="smob">
         </div>
       
         <!--input type="text"  class="form-control msg "  placeholder="Message"-->
         <button type="button " class="btn btn-primary " onclick="doFooterValidation()"><b>SEND</b></button>
+        <div>
+          <p id="falert" style="padding-top: 10px;"> </p>
+       </div>
        </div>
 
     </div>

@@ -144,7 +144,7 @@ body
 }
 
 .service-img{
-    width: 100px;
+    width: 150px;
     margin-top: 20px;
 }
 
@@ -202,8 +202,29 @@ color:#3e2974  !important;
     background-image: linear-gradient(to right, #3e2974,#ed207c);
 }
 
+/*---------about us---------*/
 
+#abts{
+    padding: 50px 0;
+    background-color: white;
+}
+.abts{
+    padding: 20px ;
+    
+}
 
+.abt-img{
+    width: 400px;
+    margin-top: 20px;
+}
+
+.abts2 {
+
+    padding: 90px 80px 20px 80px;
+    
+    
+
+}
 
 /*-----SOCIAL MEDIA-------*/
 
